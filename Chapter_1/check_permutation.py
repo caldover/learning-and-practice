@@ -18,7 +18,8 @@ def check_permutation(string1, string2):
       return False
   
   return True
-  
+
+# Test Cases:
 print(1 if check_permutation("", "") == True else 0)
 print(1 if check_permutation("a", "b") == False else 0)
 print(1 if check_permutation("ba", "ab") == True else 0)
