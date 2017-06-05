@@ -14,9 +14,7 @@ def check_permutation(string1, string2):
     if letter not in hash:
       return False
     hash[letter] -= 1
-  
-  for key in hash:
-    if hash[key] != 0:
+    if hash[letter] < 0:
       return False
   
   return True
